@@ -71,17 +71,24 @@ fibonacci(num);
 
 // c) 0, 1, 4, 9, 16, 25, 36, 49
 
-// d) 4, 16, 36, 64, 100_
+// d) 4, 16, 36, 64, 100
 
-
-// e) 1, 1, 2, 3, 5, 8, 13__
+// e) 1, 1, 2, 3, 5, 8, 13
 
 // f) 2,10, 12, 16, 17, 18, 19, 200
 
-
-// 4) Você está em uma sala com três interruptores, cada um conectado a uma lâmpada em uma sala diferente. Você não pode ver as lâmpadas da sala em que está, mas pode ligar e desligar os interruptores quantas vezes quiser. Seu objetivo é descobrir qual interruptor controla qual lâmpada.
+// 4) Você está em uma sala com três interruptores, cada um conectado a uma lâmpada em uma sala diferente. Você não pode ver as
+//lâmpadas da sala em que está, mas pode ligar e desligar os interruptores quantas vezes quiser. Seu objetivo é descobrir qual
+//interruptor controla qual lâmpada.
 
 // Como você faria para descobrir, usando apenas duas idas até uma das salas das lâmpadas, qual interruptor controla cada lâmpada?
+
+// res1.: Na primeira ida, deixaria dois interruptores acessos, por eliminação identificaria qual interruptor controla a lampada que não se acendeu.
+// Ao retornar a sala de interruptores abaixaria somente um interruptor dos dois que estão acionador e retornaria a sala das lampadas, assim, também por eliminação identificaria a qual lampada aquele interruptor está associado.
+
+//res2.: Otimizando o tempo, poderia também ligar os dois interruptores deixando por alguns minutos acesso, assim abaixaria somente um deles, 
+//após iria até a sala das lampadas, tocaria nas duas lampadas apagadas , assim, por eliminação identificaria qual lampada corresponde ao interruptor 
+//que acionei e depois desliguei atraves da temperatura da mesma. Logo, em apenas uma ida conseguiria determinar qual interruptor aciona cada lampada .
 
 //
 
@@ -94,3 +101,16 @@ fibonacci(num);
 // b) Evite usar funções prontas, como, por exemplo, reverse;
 
 // NÃO SE ESQUEÇA DE INSERIR O LINK DO SEU REPOSITÓRIO NO GITHUB COM O CÓDIGO FONTE QUE VOCÊ DESENVOLVEU .
+
+let reverseString = "Luan"
+const res = () => {
+  const reverse = reverseString.split("")
+   let strReversed =""
+
+  for(let i= reverse.length -1; i>=0; i--) {
+    strReversed += reverse[i]
+  
+  }
+  return strReversed.toLowerCase() 
+}
+console.log(res())
