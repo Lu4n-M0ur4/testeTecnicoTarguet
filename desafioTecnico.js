@@ -14,17 +14,17 @@
 
 // imprimir(SOMA);
 
-// const sum = () => {
-//   let soma = 0;
-//   let k = 0;
+const sum = () => {
+  let soma = 0;
+  let k = 0;
 
-//   for (let i = 13; k < i; k++) {
-//     soma = soma + k;
-//     console.log(soma);
-//   }
-// };
+  for (let i = 13; k < i; k++) {
+    soma = soma + k;
+    console.log(soma);
+  }
+};
 
-// sum();
+sum();
 
 // Ao final do processamento, qual será o valor da variável SOMA? Valor da soma 78
 
@@ -102,7 +102,7 @@ fibonacci(num);
 
 // NÃO SE ESQUEÇA DE INSERIR O LINK DO SEU REPOSITÓRIO NO GITHUB COM O CÓDIGO FONTE QUE VOCÊ DESENVOLVEU .
 
-let reverseString = "Luan"
+let reverseString = "Luan Moura"
 const res = () => {
   const reverse = reverseString.split("")
    let strReversed =""
